@@ -23,7 +23,7 @@ export class SMonacoEditor {
   @Event() didChangeModelContent: EventEmitter<editor.IModelContentChangedEvent>;
 
   async componentDidLoad() {
-    if (this.monaco) {
+    if (this.monacoVsPath) {
       monacoLoader.config({
         paths: {
           vs: this.monacoVsPath
