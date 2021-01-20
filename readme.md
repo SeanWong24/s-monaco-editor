@@ -27,7 +27,7 @@ First you need to [import the component to your project](#how-to-import), then t
 ></s-monaco-editor>
 ```
 Leave ```monaco-vs-path``` unset to use monaco from the CDN. To use your own version of Monaco Editor, just provide the ```vs``` path of your Monaco Editor. 
-## Get Monaco And Editor Instance
+## Get monaco and editor instance
 You can add a listener of ```'componentLoad``` event to obtain the Monaco and current editor instance like the below example:
 ```js
 document.querySelector('s-monaco-editor').addEventListener('componentLoad', (event) => {
