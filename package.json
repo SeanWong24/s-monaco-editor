@@ -22,7 +22,11 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
-    "@stencil/core": "^2.0.1"
+    "@stencil/core": "^2.0.1",
+    "monaco-editor": "^0.21.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@monaco-editor/loader": "^1.0.0"
+  }
 }

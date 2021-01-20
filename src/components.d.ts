@@ -5,8 +5,15 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Monaco } from "@monaco-editor/loader";
+import { editor } from "monaco-editor";
 export namespace Components {
     interface SMonacoEditor {
+        "language": string;
+        "monacoVsPath": string;
+        "readOnly": boolean;
+        "theme": string;
+        "value": string;
     }
 }
 declare global {
@@ -22,6 +29,13 @@ declare global {
 }
 declare namespace LocalJSX {
     interface SMonacoEditor {
+        "language"?: string;
+        "monacoVsPath"?: string;
+        "onComponentLoad"?: (event: CustomEvent<{ monaco: Monaco, editor: editor.IStandaloneCodeEditor }>) => void;
+        "onDidChangeModelContent"?: (event: CustomEvent<editor.IModelContentChangedEvent>) => void;
+        "readOnly"?: boolean;
+        "theme"?: string;
+        "value"?: string;
     }
     interface IntrinsicElements {
         "s-monaco-editor": SMonacoEditor;
