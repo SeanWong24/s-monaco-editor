@@ -1,6 +1,6 @@
 {
   "name": "@seanwong24/s-monaco-editor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An easy-to-use web component of Monaco Editor for any framework (Angular, React, Vue, etc.) or vanilla JS.",
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
