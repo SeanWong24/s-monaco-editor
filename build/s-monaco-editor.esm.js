@@ -1,0 +1,1 @@
+import{p as a,b as o}from"./p-54dc6756.js";(()=>{const o=import.meta.url,e={};return""!==o&&(e.resourcesUrl=new URL(".",o).href),a(e)})().then((a=>o([["p-ce26b5e4",[[2,"s-monaco-editor",{monacoVsPath:[1,"monaco-vs-path"],value:[1],language:[1],theme:[1],readOnly:[4,"read-only"]}]]]],a)));
