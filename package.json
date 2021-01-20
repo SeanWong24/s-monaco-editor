@@ -1,6 +1,6 @@
 {
   "name": "@seanwong24/s-monaco-editor",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An easy-to-use web component of Monaco Editor for any framework (Angular, React, Vue, etc.) or vanilla JS.",
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
@@ -19,14 +19,31 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "publish": "npm run build && npm publish"
   },
   "devDependencies": {
     "@stencil/core": "^2.0.1",
     "monaco-editor": "^0.21.3"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanWong24/s-monaco-editor.git"
+  },
   "dependencies": {
     "@monaco-editor/loader": "^1.0.0"
-  }
+  },
+  "keywords": [
+    "monaco",
+    "editor",
+    "monaco-editor",
+    "angular",
+    "react",
+    "vue",
+    "js",
+    "web",
+    "component",
+    "webcomponent"
+  ]
 }
