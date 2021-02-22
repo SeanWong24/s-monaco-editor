@@ -7,13 +7,14 @@
 
 ## Properties
 
-| Property       | Attribute        | Description | Type      | Default     |
-| -------------- | ---------------- | ----------- | --------- | ----------- |
-| `language`     | `language`       |             | `string`  | `undefined` |
-| `monacoVsPath` | `monaco-vs-path` |             | `string`  | `undefined` |
-| `readOnly`     | `read-only`      |             | `boolean` | `false`     |
-| `theme`        | `theme`          |             | `string`  | `undefined` |
-| `value`        | `value`          |             | `string`  | `undefined` |
+| Property              | Attribute                | Description | Type      | Default     |
+| --------------------- | ------------------------ | ----------- | --------- | ----------- |
+| `language`            | `language`               |             | `string`  | `undefined` |
+| `lineNumbersMinChars` | `line-numbers-min-chars` |             | `number`  | `undefined` |
+| `monacoVsPath`        | `monaco-vs-path`         |             | `string`  | `undefined` |
+| `readOnly`            | `read-only`              |             | `boolean` | `false`     |
+| `theme`               | `theme`                  |             | `string`  | `undefined` |
+| `value`               | `value`                  |             | `string`  | `undefined` |
 
 
 ## Events
