@@ -18,6 +18,7 @@ export class SMonacoEditor {
   @Prop() language: string;
   @Prop() theme: string;
   @Prop() readOnly: boolean = false;
+  @Prop() lineNumbersMinChars: number;
 
   @Event() componentLoad: EventEmitter<{ monaco: Monaco, editor: editor.IStandaloneCodeEditor }>;
   @Event() didChangeModelContent: EventEmitter<editor.IModelContentChangedEvent>;
@@ -36,7 +37,8 @@ export class SMonacoEditor {
       language: this.language,
       theme: this.theme,
       readOnly: this.readOnly,
-      automaticLayout: true
+      automaticLayout: true,
+      lineNumbersMinChars: this.lineNumbersMinChars
     });
     this.editor.onDidChangeModelContent(event => {
       this.value = this.editor.getValue();

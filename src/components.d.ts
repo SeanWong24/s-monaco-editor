@@ -10,6 +10,7 @@ import { editor } from "monaco-editor";
 export namespace Components {
     interface SMonacoEditor {
         "language": string;
+        "lineNumbersMinChars": number;
         "monacoVsPath": string;
         "readOnly": boolean;
         "theme": string;
@@ -30,6 +31,7 @@ declare global {
 declare namespace LocalJSX {
     interface SMonacoEditor {
         "language"?: string;
+        "lineNumbersMinChars"?: number;
         "monacoVsPath"?: string;
         "onComponentLoad"?: (event: CustomEvent<{ monaco: Monaco, editor: editor.IStandaloneCodeEditor }>) => void;
         "onDidChangeModelContent"?: (event: CustomEvent<editor.IModelContentChangedEvent>) => void;
